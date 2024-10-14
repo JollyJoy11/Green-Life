@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Description: Identify -->
+<!-- Author: Aryn Jee Mei Wei -->
+<!-- Date 15/9/2024 -->
+<!-- Validated: OK 12/10/2024 -->
+
+<head>
+    <title>Identify Your Plant | Green Life</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Aryn Jee Mei Wei"/>
+	<meta name="description" content="Identify plants quickly and accurately with our advanced tools. Upload plant photos or use key features to help determine the species, genus, and family of various plants.">
+	<meta name="keywords" content="plant, identification, plant identification, species, genus, plant family"/>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"/> <!-- small icon at webpage head -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> <!-- link for icons -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+
+<body>
+<header>
+	<nav>
+			<!-- Dropdown Menu using Unordered Nested Lists-->
+		<div class="menu">
+			<a href="index.html"><img class="logo" src="images/logo.png" alt="Green Life"/></a>
+			<ul class="menuleft">
+				<li class="menubar home"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+				<li class="menubar"><a href="classify.html">Classification</a></li>
+				<li class="menubar">
+					<span class="dropdown-btn">Herbarium <i class="fa-solid fa-plus"></i></span>
+					<ul class="dropdown-content">
+						<li><a href="tutorial.html">Tutorial</a></li>
+						<li><a href="tools.html">Tools</a></li>
+						<li><a href="care.html">Care</a></li>
+					</ul>
+				</li>
+				<li class="menubar"><a href="identify.html">Identify</a></li>
+				<li class="menubar"><a href="contribute.html">Contribute</a></li>
+			</ul>
+			<ul class="menuright">
+				<li class="search-container">
+					<form>
+						<input type="search" placeholder="Search" name="search"/>
+						<i class="fa fa-search"></i>
+					</form>
+				</li> 
+				<li><a href="registration.html" class="register">Register</a></li>
+				<li><i class="fa-regular fa-user"></i></li>
+			</ul>
+		</div>
+	</nav>
+	<nav class="hamburger-menu">
+        <input type="checkbox" id="open-check"/>
+        <label for="open-check" class="hamburger-icons">
+            <i class="fa fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <ul class="hamburger">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classify.html">Classification</a></li>
+            <li>
+                <input type="checkbox" id="open-dropdown"/>
+                <label for="open-dropdown">Herbarium <i class="fa-solid fa-plus"></i></label>
+                <ul class="dropdown-burger">
+                    <li><a href="tutorial.html">Tutorial</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="care.html">Care</a></li>
+                </ul>
+            </li>
+            <li><a href="identify.html">Identify</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+        </ul>
+    </nav>
+</header>
+
+<article id="identify">
+		<!-- Enquiry button -->
+	<div class="enquiry">
+		<a href="enquiry.html"><i class="fa-regular fa-circle-question"></i></a>
+	</div>
+	<aside id="map">
+		<embed src="https://www.globalforestwatch.org/embed/map/"/>
+	</aside>
+	<h1>Unfold the Identity of the Unknown Plants</h1>
+	<section id="identify_plant">
+		<h2>Steps to Identify a Plant: </h2>
+		<ol>
+			<li>
+				<strong>Take a Clear Photo:</strong>&nbsp;
+				Ensure that the plant is the main focus of the photo. A well-lit, close-up image of the leaves, flowers, or fruits will increase the accuracy of identification.
+			</li>
+			<li>
+				<strong>Upload the Image:</strong>&nbsp;
+				Click the button below to upload your photo. You can select an image directly from your device. Our system supports various file formats like JPG, PNG, and more.
+			</li>
+			<li>
+				<strong>Get Your Results:</strong>&nbsp;
+				Once uploaded, our advanced plant identification system will analyze the image and provide you with detailed information about the plant, including its scientific name and common names.
+			</li>
+		</ol>
+		<h2>Tips for the Best Identification Results:</h2>
+		<ul>
+			<li>Ensure the plant is in focus and well-lit.</li>
+			<li>Avoid taking photos in direct sunlight, as this can cause shadows and glare.</li>
+			<li>Capture multiple parts of the plant, such as leaves, flowers, and stems, for a more accurate identification.</li>
+		</ul>	
+		<form name="identify">
+			<p class="file">
+				<input type="file" id="identifyphoto" name="identifyphoto" accept="image/*" required="required"/>
+				<label for="identifyphoto"><i class="fa-regular fa-file-image"></i>&emsp;IDENTIFY NOW</label>
+			</p>
+		</form>
+	</section>
+	<section id="result">
+		<div id="plant_details">
+			<h2>Identified Plant Overview:</h2>
+			<p><strong>Scientific Name:</strong>&ensp;<span class="detail"><em>Actinodaphne macrophylla (Blume) Nees</em></span></p>
+			<p><strong>General Name:</strong>&ensp;<span class="detail"><em>Actinodaphne maingayi Hook.</em></span></p>
+			<p><strong>Plant Family:</strong>&ensp;<span class="detail"><em>Lauraceae</em></span></p>
+			<p><strong>Location:</strong>&ensp;<span class="detail">Native to Singapore</span></p>
+		</div>
+
+		<div id="result_gallery">
+			<img src="images/result_gallery1.jpg" alt="Actinodaphne macrophylla (Blume) Nees"/>
+			<img src="images/result_gallery2.jpg" alt="Actinodaphne macrophylla (Blume) Nees"/>
+			<img src="images/result_gallery3.jpg" alt="Actinodaphne macrophylla (Blume) Nees"/>
+			<img src="images/result_gallery4.jpg" alt="Actinodaphne macrophylla (Blume) Nees"/>
+			<img src="images/result_gallery5.jpg" alt="Actinodaphne macrophylla (Blume) Nees"/>
+			<img src="images/result_gallery6.jpg" alt="Actinodaphne macrophylla (Blume) Nees"/>
+		</div>
+	</section>
+	<br/>
+</article>
+
+<footer>
+    <ul>
+        <li class="footer-list">
+            <a href="classify.html">Classification</a>
+            <ul class="footer-content">
+                <li><a href="classify.html#def_plant">Plant Classification</a></li>
+                <li><a href="classify.html#three_def">Family, Genus, Species</a></li>
+                <li><a href="classify.html#tab_nav">Lauraceae</a></li>
+            </ul>
+        </li>
+        <li class="footer-list">
+            <span id="herbarium-ft">Herbarium</span>
+            <ul class="footer-content">
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="care.html">Care</a></li>
+            </ul>
+        </li>
+        <li class="footer-list">
+            <ul class="footer-content2">
+                <li><a href="identify.html">Identify</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="enquiry.html">Enquire Now</a></li>
+                <li><a href="enhancement1.html">Enhancement</a></li>
+            </ul>
+        </li>
+        <li class="footer-list">
+            <a href="profile.html">Profile</a>
+            <ul class="footer-content profile">
+                <li><a href="aboutme1.html" title="Joanne"><i class="fa-brands fa-canadian-maple-leaf"></i> Joanne Chin</a></li>
+                <li><a href="aboutme2.html" title="Ellie"><i class="fa-brands fa-canadian-maple-leaf"></i> Ellie Teng</a></li>
+                <li><a href="aboutme3.html" title="Aryn"><i class="fa-brands fa-canadian-maple-leaf"></i> Aryn Jee</a></li>
+                <li><a href="aboutme4.html" title="Cyndia"><i class="fa-brands fa-canadian-maple-leaf"></i> Cyndia Teo</a></li>
+            </ul>
+        </li>
+    </ul>
+    <p class=ft-bottom><a href="acknowledgement.html">&copy; Acknowledgement</a></p>
+</footer>
+</body>
+</html>

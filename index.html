@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Description: Homepage -->
+<!-- Author: Joanne Chin Jia Xuan -->
+<!-- Date: 4/9/2024 -->
+<!-- Validated: OK 12/10/2024 -->
+
+<head>
+    <title>Green Life</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Joanne Chin Jia Xuan"/>
+	<meta name="description" content="Explore the world of plants with our herbarium and plant identification tools. Contribute, discover, and learn about various plant species through an interactive database. Join our community to share your knowledge and enhance your plant identification skills."/>
+	<meta name="keywords" content="Green Life, herbarium, herbarium tutorial, plant, identification, plant identification, species, genus, plant family, plant classification"/>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"/> <!-- small icon at webpage head -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> <!-- link for icons -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+
+<body>
+<header>
+	<nav>
+			<!-- Dropdown Menu using Unordered Nested Lists-->
+		<div class="menu">
+			<a href="index.html"><img class="logo" src="images/logo.png" alt="Green Life"/></a>
+			<ul class="menuleft">
+				<li class="menubar home"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+				<li class="menubar"><a href="classify.html">Classification</a></li>
+				<li class="menubar">
+					<span class="dropdown-btn">Herbarium <i class="fa-solid fa-plus"></i></span>
+					<ul class="dropdown-content">
+						<li><a href="tutorial.html">Tutorial</a></li>
+						<li><a href="tools.html">Tools</a></li>
+						<li><a href="care.html">Care</a></li>
+					</ul>
+				</li>
+				<li class="menubar"><a href="identify.html">Identify</a></li>
+				<li class="menubar"><a href="contribute.html">Contribute</a></li>
+			</ul>
+			<ul class="menuright">
+				<li class="search-container">
+					<form>
+						<input type="search" placeholder="Search" name="search"/>
+						<i class="fa fa-search"></i>
+					</form>
+				</li> 
+				<li><a href="registration.html" class="register">Register</a></li>
+				<li><i class="fa-regular fa-user"></i></li>
+			</ul>
+		</div>
+	</nav>
+	<nav class="hamburger-menu">
+        <input type="checkbox" id="open-check"/>
+        <label for="open-check" class="hamburger-icons">
+			<i class="fa fa-bars"></i>
+			<i class="fa-solid fa-xmark"></i>
+		</label>
+        <ul class="hamburger">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classify.html">Classification</a></li>
+            <li>
+				<input type="checkbox" id="open-dropdown"/>
+                <label for="open-dropdown">Herbarium <i class="fa-solid fa-plus"></i></label>
+                <ul class="dropdown-burger">
+                    <li><a href="tutorial.html">Tutorial</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="care.html">Care</a></li>
+                </ul>
+            </li>
+            <li><a href="identify.html">Identify</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+        </ul>
+    </nav>
+</header>
+
+<article id="homepage">
+		<!-- Enquiry button -->
+	<div class="enquiry">
+		<a href="enquiry.html"><i class="fa-regular fa-circle-question"></i></a>
+	</div>
+	<div id="splashpage">
+		<div id="splash-text">
+			<h1>Capture Nature Across Time</h1>
+			<p id="splash_desc">Build your own herbarium, unlock plant mysteries, and share your discoveries with a global botanical community.</p>
+			<p class="sign-btn"><a href="#">Sign In</a></p>
+			<p class="sign-btn"><a href="registration.html">Join Now <span id="hero-arrow">&#8594;</span></a></p>
+		</div>
+	</div>
+	
+	<section>
+		<div class="image-text">
+			<figure>
+				<img src="images/herbarium-def.jpg" alt="Herbarium Specimen"/>
+			</figure>
+			<div class="index-sect">
+				<h2>What is Herbarium?</h2>
+				<p>Herbarium are collection of dried plant specimens mounted on sheets of paper. The plants are usually collected from where they were growing in nature, identified by experts, pressed, and then carefully mounted to archival paper so that all major morphological characteristics are visible. The mounted plants are labeled with their scientific names, the collector's name, the information about where they were collected and how they grew, and general observations. The specimens are commonly filed in cases according to families and genera and are available for ready reference.</p>
+			</div>
+		</div>
+		<table class="main-table">
+			<tr>
+				<th>Benefits<br/>of<br/>Herbarium</th>
+				<td>
+					<ul>
+						<li>Provide reference samples for the identification of plants</li>
+						<li>Serve as a reference library for the identification of parts of the plants</li>
+						<li>Can be made as bookmarks and decorations</li>
+						<li>Provide information for studies of expeditions and explorers</li>
+						<li>Provide the basis for an illustration of a plant</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</section>
+	
+	<section id="herbarium-sect">
+		<h2>Interested in Making Your Own Herbarium?</h2>
+		<div id="gridbox">
+			<p id="herb-desc">Here are the things you need to know to DIY your own herbarium.</p>
+			<div class="gallery" id="gal1">
+				<img src="images/herbarium-tutorial.jpg" alt="Tutorial"/>
+				<p><a href="tutorial.html"><span>Tutorial</span> &#10230;</a></p>
+				<p class="desc">Making herbarium for catalogue or aesthetic purposes is a tougher job than it looks. Need a hand?</p>
+			</div>
+			<div class="gallery" id="gal2">
+				<img src="images/herbarium-tools.jpg" alt="Tools"/>
+				<p><a href="tools.html"><span>Tools</span> &#10230;</a></p>
+				<p class="desc">There are specific tools and equipment required to properly make a herbarium. </p>
+			</div>
+			<div class="gallery" id="gal3">
+				<img src="images/herbarium-care.jpg" alt="Care"/>
+				<p><a href="care.html"><span>Care</span> &#10230;</a></p>
+				<p class="desc">Herbarium needs plenty of attention. Maintaining a herbarium will require technique and utmost care. </p>
+			</div>
+		</div>
+	</section>
+	<div class="index-sect">
+		<h2>Fellow plant lovers, we need your help! </h2>
+		<p>Share your plant photos with us to help grow our plant identification database. Every contribution brings us closer to building a rich resource for plant enthusiasts and researchers alike. Your support is much appreciated!</p>
+		<p>Submit your photos and be part of our growing plant community!</p>
+		<p><a href="contribute.html">CONTRIBUTE <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+	</div>
+	<div class="image-text" id="identify-sect">
+		<figure>
+			<img src="images/identify.png" alt="Identify with Phone"/>
+		</figure>
+		<div class="index-sect">
+			<h2>Struggling to Identify a Plant?</h2>
+			<p>Simply snap a photo and let Green Life identify the species, genus, or family instantly. Explore the world of plants effortlessly and build your own herbarium with ease.</p>
+			<p><a href="identify.html">IDENTIFY <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+		</div>
+	</div>
+		<!-- Feedback Pop-Up -->
+	<div id="feedback-sect">
+		<div class="finishline">
+			<span class="line"></span>
+			<p>We would like to hear from you</p>
+			<span class="line"></span>
+		</div>
+		<label for="cross" id="feedback-btn">Feedback</label>
+		<br/>
+		<br/>
+		<input type="checkbox" id="cross">
+		<label for="cross" id="feedback_overlay"></label>
+		<div id="feedback">
+			<label for="cross">&times;</label>
+			<form name="feedback" method="post" action="mailto:starcruise@gmail.com" enctype="text/plain">	
+				<ol>
+					<li>
+						Did you find the information you were looking for?
+						<p><input type="radio" name="goal" value="yes" checked="checked" id="yes"/><label for="yes">Yes</label>
+						<input type="radio" name="goal" value="no" id="no"/><label for="no">No</label></p>
+					</li>
+					<li>
+						Please rate your overall satisfaction of this website?
+						<div id="star-widget">
+							<input type="radio" name="ratings" value="rate-5" id="rate-5"/><label for="rate-5" class="fa-solid fa-star"></label>
+							<input type="radio" name="ratings" value="rate-4" id="rate-4"/><label for="rate-4" class="fa-solid fa-star"></label>
+							<input type="radio" name="ratings" value="rate-3" id="rate-3"/><label for="rate-3" class="fa-solid fa-star"></label>
+							<input type="radio" name="ratings" value="rate-2" id="rate-2"/><label for="rate-2" class="fa-solid fa-star"></label>
+							<input type="radio" name="ratings" value="rate-1" id="rate-1"/><label for="rate-1" class="fa-solid fa-star"></label>
+						</div>
+					</li>
+					<li>
+						<label for="comment">Please let us know how we can improve this website?</label>
+						<p><textarea name="comment" rows="5" cols="55" required="required" id="comment"></textarea></p>
+					</li>
+				</ol>
+				<input type="submit" value="SUBMIT"/>
+			</form>
+		</div>
+	</div>
+</article>
+
+<footer>
+    <ul>
+        <li class="footer-list">
+            <a href="classify.html">Classification</a>
+            <ul class="footer-content">
+                <li><a href="classify.html#def_plant">Plant Classification</a></li>
+                <li><a href="classify.html#three_def">Family, Genus, Species</a></li>
+                <li><a href="classify.html#tab_nav">Lauraceae</a></li>
+            </ul>
+        </li>
+        <li class="footer-list">
+            <span id="herbarium-ft">Herbarium</span>
+            <ul class="footer-content">
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="care.html">Care</a></li>
+            </ul>
+        </li>
+        <li class="footer-list">
+            <ul class="footer-content2">
+                <li><a href="identify.html">Identify</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="enquiry.html">Enquire Now</a></li>
+                <li><a href="enhancement1.html">Enhancement</a></li>
+            </ul>
+        </li>
+        <li class="footer-list">
+            <a href="profile.html">Profile</a>
+            <ul class="footer-content profile">
+                <li><a href="aboutme1.html" title="Joanne"><i class="fa-brands fa-canadian-maple-leaf"></i> Joanne Chin</a></li>
+                <li><a href="aboutme2.html" title="Ellie"><i class="fa-brands fa-canadian-maple-leaf"></i> Ellie Teng</a></li>
+                <li><a href="aboutme3.html" title="Aryn"><i class="fa-brands fa-canadian-maple-leaf"></i> Aryn Jee</a></li>
+                <li><a href="aboutme4.html" title="Cyndia"><i class="fa-brands fa-canadian-maple-leaf"></i> Cyndia Teo</a></li>
+            </ul>
+        </li>
+    </ul>
+    <p class=ft-bottom><a href="acknowledgement.html">&copy; Acknowledgement</a> | <a href="https://youtu.be/oalW5QA4d2c?si=crOpRA1ZKbUYzylV" target="_blank"> Green Life Video</a></p>
+</footer>
+</body>
+</html>

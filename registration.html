@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Description: Homepage -->
+<!-- Author: Joanne Chin Jia Xuan -->
+<!-- Date: 4/9/2024 -->
+<!-- Validated: OK 12/10/2024 -->
+
+<head>
+    <title>Register Now | Green Life</title>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Joanne Chin Jia Xuan"/>
+	<meta name="description" content="Join our community by creating an account. Register to contribute plant photos, access advanced identification tools, and manage your activity on our platform."/>
+    <meta name="keywords" content="Green Life, herbarium, herbarium tutorial, plant, identification, plant identification, species, genus, plant family, plant classification, register, join now, sign up"/>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico"/> <!-- small icon at webpage head -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> <!-- link for icons -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+
+<body>
+<header>
+	<nav class="menu">
+			<!-- Dropdown Menu using Unordered Nested Lists-->
+		<a href="index.html"><img class="logo" src="images/logo.png" alt="Green Life"/></a>
+		<ul class="menuleft">
+			<li class="menubar home"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+			<li class="menubar"><a href="classify.html">Classification</a></li>
+			<li class="menubar">
+				<span class="dropdown-btn">Herbarium <i class="fa-solid fa-plus"></i></span>
+				<ul class="dropdown-content">
+					<li><a href="tutorial.html">Tutorial</a></li>
+					<li><a href="tools.html">Tools</a></li>
+					<li><a href="care.html">Care</a></li>
+				</ul>
+			</li>
+			<li class="menubar"><a href="identify.html">Identify</a></li>
+			<li class="menubar"><a href="contribute.html">Contribute</a></li>
+		</ul>
+		<ul class="menuright">
+            <li class="search-container">
+                <form>
+                    <input type="search" placeholder="Search" name="search"/>
+                    <i class="fa fa-search"></i>
+                </form>
+            </li> 
+            <li><a href="registration.html" class="register">Register</a></li>
+            <li><i class="fa-regular fa-user"></i></li>
+        </ul>
+	</nav>
+    <nav class="hamburger-menu">
+        <input type="checkbox" id="open-check"/>
+        <label for="open-check" class="hamburger-icons">
+            <i class="fa fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <ul class="hamburger">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classify.html">Classification</a></li>
+            <li>
+                <input type="checkbox" id="open-dropdown"/>
+                <label for="open-dropdown">Herbarium <i class="fa-solid fa-plus"></i></label>
+                <ul class="dropdown-burger">
+                    <li><a href="tutorial.html">Tutorial</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="care.html">Care</a></li>
+                </ul>
+            </li>
+            <li><a href="identify.html">Identify</a></li>
+            <li><a href="contribute.html">Contribute</a></li>
+        </ul>
+    </nav>
+</header>
+
+<article>
+		<!-- Enquiry button -->
+	<div class="enquiry">
+		<a href="enquiry.html"><i class="fa-regular fa-circle-question"></i></a>
+	</div>
+	<div id="registration">
+		<form name="registration_form" method="post" action="mailto:greenlife@gmail.com" enctype="text/plain">
+            <fieldset>
+			    <legend><h1>Sign Up</h1></legend>
+                <p><label for="firstname">Name: </label></p>
+                <p><input type="text" name="firstname" maxlength="25" required="required" id="firstname" pattern="[A-Za-z]+" placeholder="First Name"/>&emsp;
+                    <input type="text" name="lastname" maxlength="25" required="required" id="lastname" pattern="[A-Za-z]+" placeholder="Last Name"/></p>
+                <p><label for="email">Email: </label></p>
+                <p><input type="email" name="email" id="email" required="required" placeholder="Enter Email"/></p>
+                <p><label for="password">Password:</label></p>
+                <p><input type="password" name="password" maxlength="25" required="required" id="password" pattern="[A-Za-z]+" placeholder="••••••••" title="Only alphabetical characters"/></p>
+                <p><input type="submit" value="SUBMIT"/></p>
+            </fieldset>
+        </form>
+	</div>
+</article>
+
+<footer>
+    <ul>
+        <li class="footer-list">
+            <a href="classify.html">Classification</a>
+            <ul class="footer-content">
+                <li><a href="classify.html#def_plant">Plant Classification</a></li>
+                <li><a href="classify.html#three_def">Family, Genus, Species</a></li>
+                <li><a href="classify.html#tab_nav">Lauraceae</a></li>
+            </ul>
+        </li>
+        <li class="footer-list">
+            <span id="herbarium-ft">Herbarium</span>
+            <ul class="footer-content">
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="care.html">Care</a></li>
+            </ul>
+        </li>
+        <li class="footer-list">
+            <ul class="footer-content2">
+                <li><a href="identify.html">Identify</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="enquiry.html">Enquire Now</a></li>
+                <li><a href="enhancement1.html">Enhancement</a></li>
+            </ul>
+        </li>
+        <li class="footer-list">
+            <a href="profile.html">Profile</a>
+            <ul class="footer-content profile">
+                <li><a href="aboutme1.html" title="Joanne"><i class="fa-brands fa-canadian-maple-leaf"></i> Joanne Chin</a></li>
+                <li><a href="aboutme2.html" title="Ellie"><i class="fa-brands fa-canadian-maple-leaf"></i> Ellie Teng</a></li>
+                <li><a href="aboutme3.html" title="Aryn"><i class="fa-brands fa-canadian-maple-leaf"></i> Aryn Jee</a></li>
+                <li><a href="aboutme4.html" title="Cyndia"><i class="fa-brands fa-canadian-maple-leaf"></i> Cyndia Teo</a></li>
+            </ul>
+        </li>
+    </ul>
+    <p class=ft-bottom><a href="acknowledgement.html">&copy; Acknowledgement</a></p>
+</footer>
+</body>
+</html>
